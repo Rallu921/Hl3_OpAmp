@@ -1,2 +1,3 @@
-# Hl3_OpAmp
-Project - Operational Amplifier Design
+# Ηλεκτρονική 3 - Εργασία Τελεστικού Ενισχιτή
+
+Παρατήθεται το σκριπτάκι στο MATLAB. 
