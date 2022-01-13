@@ -1,0 +1,175 @@
+
+**** 01/06/22 22:10:31 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-first"  [ C:\Users\sarid\OneDrive\Documents\OpAmp\operational amplifier-pspicefiles\schematic1\first.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "first.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../operational amplifier-pspicefiles/operational amplifier.lib" 
+* From [PSPICE NETLIST] section of C:\Users\sarid\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 500 1 100meg
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source OPERATIONAL AMPLIFIER
+I_I5         N00428 N01398 DC 9.395958uAdc  
+C_Cl         0 N01118  2.33p  TC=0,0 
+C_Cc         N01018 N01118  0.5126p  TC=0,0 
+V_Vdd         N00428 0 2.79Vdc
+V_Vss         0 N01361 2.79Vdc
+V_Vin         N00417 0 DC 0Vdc AC 1Vac 
+M_M8         N01398 N01398 N01361 N01361 nfet  
++ L=1e-6  
++ W=9.0173e-7         
+M_M1         N05145 0 N01219 N01219 nfet  
++ L=1e-6  
++ W=6.1546e-7         
+M_M2         N01018 N00417 N01219 N01219 nfet  
++ L=1e-6  
++ W=6.1546e-7         
+M_M5         N01219 N01398 N01361 N01361 nfet  
++ L=1e-6  
++ W=9.0173e-7         
+M_M7         N01118 N01398 N01361 N01361 nfet  
++ L=1e-6  
++ W=1.5626e-5         
+M_M3         N05145 N05145 N00428 N00428 pfet  
++ L=1e-6  
++ W=1.6824e-7         
+M_M4         N01018 N05145 N00428 N00428 pfet  
++ L=1e-6  
++ W=1.6824e-7         
+M_M6         N01118 N01018 N00428 N00428 pfet  
++ L=1e-6  
++ W=5.8309e-6         
+
+**** RESUMING first.cir ****
+.END
+
+**** 01/06/22 22:10:31 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-first"  [ C:\Users\sarid\OneDrive\Documents\OpAmp\operational amplifier-pspicefiles\schematic1\first.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               nfet            pfet            
+               NMOS            PMOS            
+       LEVEL    3               3            
+         TPG                   -1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+          LD  164.700000E-09   22.000000E-09 
+         VTO     .786           -.9056       
+          KP  963.790000E+03   29.352000E-06 
+       GAMMA     .5863           .4863       
+         PHI     .6              .6          
+      LAMBDA    0               0            
+         RSH   85.45          104.7          
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .85         
+        PBSW     .8              .85         
+          CJ  385.410000E-06  484.470000E-06 
+        CJSW  139.400000E-12  164.570000E-12 
+          MJ    1.1854           .5027       
+        MJSW     .125195         .217168     
+        CGSO  402.410000E-12   53.752000E-12 
+        CGDO  402.410000E-12   53.752000E-12 
+        CGBO  361.440000E-12  336.500000E-12 
+        NSUB   16.160000E+15   18.900000E+15 
+         NFS    5.000000E+12    3.460000E+12 
+         TOX   21.200000E-09   21.200000E-09 
+          XJ  200.000000E-09  200.000000E-09 
+          UO  591.7           180.2          
+       UCRIT   10.000000E+03   10.000000E+03 
+        VMAX  208.200000E+03  373.200000E+03 
+       DELTA     .6967          1.52         
+       THETA     .08122          .1248       
+         ETA     .07066          .1641       
+       KAPPA     .1396          9.694        
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 01/06/22 22:10:31 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-first"  [ C:\Users\sarid\OneDrive\Documents\OpAmp\operational amplifier-pspicefiles\schematic1\first.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00417)    0.0000 (N00428)    2.7900 (N01018)   -2.7900 (N01118)   -2.7900     
+
+(N01219)   -2.7900 (N01361)   -2.7900 (N01398)   -2.7900 (N05145)   -2.7900 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vdd       -1.179E-03
+    V_Vss       -1.179E-03
+    V_Vin        0.000E+00
+
+    TOTAL POWER DISSIPATION   6.58E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/06/22 22:10:31 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-first"  [ C:\Users\sarid\OneDrive\Documents\OpAmp\operational amplifier-pspicefiles\schematic1\first.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .16
+
